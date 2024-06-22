@@ -3,28 +3,23 @@
 #include <stdio.h>
 
 /**
- * main - Entry point, generates a random number and prints its last digit.
- *
- * Return: Always 0.
+ * main - Entry point of the program
+ * .........
+ * Description: Assigns a random number to int and prints it to standard output
+ * Specifies the condition met (positive, zero, negative)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-    int n;
+	int n;
 
-    srand(time(0));
-    n = rand() - RAND_MAX / 2;
-
-    printf("Last digit of %d ", n);
-
-    // Get the last digit of n
-    int last_digit = abs(n) % 10;
-
-    if (last_digit > 5)
-        printf("is greater than 5\n");
-    else if (last_digit == 0)
-        printf("is 0\n");
-    else
-        printf("is less than 6 and not 0\n");
-
-    return (0);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+		printf("%d is positive\n", n);
+	else if (n == 0)
+		printf("%d is zero\n", n);
+	else if (n < 0)
+		printf("%d is negative\n", n);
+	return (0);
 }
