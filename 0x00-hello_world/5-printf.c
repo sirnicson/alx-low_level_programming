@@ -1,5 +1,5 @@
 #include <stdio.h>
-/**                                                                    
+/**
  * main - Entry point of the program
  *                                                                     
  * Description: Prints a string to the standard output
