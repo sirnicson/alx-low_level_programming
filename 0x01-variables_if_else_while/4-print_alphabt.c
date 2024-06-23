@@ -14,7 +14,7 @@ int main(void) /* Entry point takes no argument(void) */
 	char ch = 'a'; /* declares variable ch of type char*/
 			/* and initializes to a*/
 
-	while (ch<= 'z') /* iterates along as ch<=z */
+	while (ch <= 'z') /* iterates along as ch<=z */
 	{
 		if (ch != 'e' && ch != 'q') /* checks ch !=e&q */
 		{
