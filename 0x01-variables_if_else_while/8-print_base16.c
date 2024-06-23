@@ -21,7 +21,6 @@ int main(void)
 	{
 		putchar(ch); /* Print characters 'a' to 'f' */
 	}
-	
 	putchar('\n'); /* Print new line */
 	return (0);
 }
