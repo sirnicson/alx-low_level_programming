@@ -20,12 +20,10 @@ int main(void)
 		{
 			for (t2 = t1; t2 < 10; t2++) /* Loop t2, starts from t1 */
 			{
-				/* Start u2 from 0 if it's the same tens digit, otherwise start from u1 */
 				int start_u2 = (t1 == t2) ? u1 : 0;
 
 				for (u2 = start_u2; u2 < 10; u2++) /* Loop for u2 */
 				{
-					/* Skip printing the same number (e.g., 00 00) */
 					if (t1 == t2 && u1 == u2)
 						continue;
 
@@ -50,8 +48,7 @@ int main(void)
 			}
 		}
 	}
-	
-	/* Print newline at the end */
+
 	putchar('\n');
 	return (0);
 }
