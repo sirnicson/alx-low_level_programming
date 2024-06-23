@@ -13,6 +13,7 @@
 int main(void)
 {
 	int t1, u1, t2, u2;
+	
 	for (t1 = 0; t1 < 10; t1++) /* Loop for tens digit of first number */
 	{
 		for (u1 = 0; u1 < 10; u1++) /* Loop for unit digit of first number */
@@ -21,6 +22,7 @@ int main(void)
 			{
 				/* Start u2 from 0 if it's the same tens digit, otherwise start from u1 */
 				int start_u2 = (t1 == t2) ? u1 : 0;
+				
 				for (u2 = start_u2; u2 < 10; u2++) /* Loop for ones digit of second number */
 				{
 					/* Skip printing the same number (e.g., 00 00) */
