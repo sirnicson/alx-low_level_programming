@@ -16,14 +16,15 @@ int main(void)
 	char ch; /* Declare variable ch of typre char*/
 	
 	for (n = 0; n < 10; n++) /*Sets n to 0, increases to 9 */
-        {
-                putchar(n + '0'); /*Prints n to equate ASCII xter*/
-        }
-
+	{
+		putchar(n + '0'); /*Prints n to equate ASCII xter*/
+	}
+	
 	for (ch = 'a'; ch <= 'f'; ch++) /*Sets ch to a, increases to f*/
 	{
 		putchar(ch); /*Prints ch in  increment mode*/
 	}
-        putchar('\n'); /* Print new line after loop*/
-        return (0);
+	
+	putchar('\n'); /* Print new line after loop*/
+	return (0);
 }
