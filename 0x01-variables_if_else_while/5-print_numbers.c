@@ -13,7 +13,7 @@ int main(void)
 {
 	int n; /* Declare variable n of type int */
 
-	for (n =0; n < 10; n++) /* Sets n to 0, increases upto 9 */
+	for (n = 0; n < 10; n++) /* Sets n to 0, increases upto 9 */
 	{
 		printf("%d", n); /* Prints current value of n */
 	}
