@@ -2,39 +2,53 @@
 
 /**
  * main - Entry into the program
- *
- * Description: Prints all  combinations of three digits
- * Combinantions are seprated by ,
- * Print only the smallest combination of three digits
- * Should be printed in ascending order
- * Combinations should be different
- *
+ * Description: Prints all possible combinations
+ * of two two-digit numbers.
+ * The combinations must be in ascending order.
+ * Numbers should be printed with two digits.
+ * Numbers must be separated by a comma followed by a space.
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int a, b, c;
-	
-	for (a = 0; a < 10; a++) /* Loop 0 to 9 for first digit */
+	int t1, u1, t2, u2;
+	for (t1 = 0; t1 < 10; t1++) /* Loop for tens digit of first number */
 	{
-		for (b = 0; b < 10; b++) /* Loop 0 to 9 for second digit */
+		for (u1 = 0; u1 < 10; u1++) /* Loop for unit digit of first number */
 		{
-			for (c = 0; c < 10; c++) /* Loop 0 to 9 for third digit */
+			for (t2 = t1; t2 < 10; t2++) /* Loop for tens digit of second number, starts from t1 */
 			{
-				if (a < b && b < c) /*Unique and ascendin */
+				/* Start u2 from 0 if it's the same tens digit, otherwise start from u1 */
+				int start_u2 = (t1 == t2) ? u1 : 0;
+				for (u2 = start_u2; u2 < 10; u2++) /* Loop for ones digit of second number */
 				{
-					putchar(a + '0'); /* Print firs a */
-					putchar(b + '0'); /* Print second b */
-					putchar(c + '0'); /* Print third c */
-					if (a != 7 || b != 8 || c != 9) /* 789 Combo */
+					/* Skip printing the same number (e.g., 00 00) */
+					if (t1 == t2 && u1 == u2)
+						continue;
+					
+					/* Print the first number */
+					putchar(t1 + '0');
+					putchar(u1 + '0');
+					
+					/* Print the second number */
+					putchar(' ');
+					putchar(t2 + '0');
+					putchar(u2 + '0');
+					
+					/* Check if it's not the last combination */
+					if (!(t1 == 9 && u1 == 8 && t2 == 9 && u2 == 9))
 					{
-						putchar(','); /* Print comma */
-						putchar(' '); /* Print space */
+						/* Print comma and space */
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
 		}
 	}
-	putchar('\n'); /* Print newline at the end */
+	
+	/* Print newline at the end */
+	putchar('\n');
 	return (0);
 }
