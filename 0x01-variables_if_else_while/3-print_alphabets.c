@@ -10,7 +10,7 @@
  */
 
 int main(void)
-{            
+{
 	int ch;
 	/* Loops to print lowercase a-z */
 	for (ch = 'a'; ch <= 'z'; ch++)
