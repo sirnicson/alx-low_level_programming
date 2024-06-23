@@ -3,8 +3,9 @@
 /**
  * main - Entry point of the program
  *
- * Description: Prints all possible combination of..
- * ...single digit numbers
+ * Description: Prints all possible combination of
+ * of single digit numbers
+ * followed by a space.
  *
  * Return: Always 0 (Success)
  */
