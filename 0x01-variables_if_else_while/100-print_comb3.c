@@ -12,7 +12,7 @@
 int main(void)
 {
 	int e, i;
-	
+
 	for (e = 0; e < 10; e++) /* Loop from 0 to 9 for e */
 	{
 		for (i = 0; i < 10; i++) /* Loop from 0 to 9 for i */
@@ -21,7 +21,7 @@ int main(void)
 			{
 				putchar(e + '0');
 				putchar(i + '0');
-				if (!(e == 8 && i == 9)) /* Avoid printing comma and space after the last combination */
+				if (!(e == 8 && i == 9))/*89 combo guard*/
 				{
 					putchar(',');
 					putchar(' ');
