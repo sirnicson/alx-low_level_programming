@@ -14,7 +14,7 @@
 int main(void)
 {
 	int a, b, c;
-	
+
 	for (a = 0; a < 10; a++) /* Loop 0 to 9 for first digit */
 	{
 		for (b = 0; b < 10; b++) /* Loop 0 to 9 for second digit */
