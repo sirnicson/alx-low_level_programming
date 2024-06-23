@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main: Entry to the program
+ * main: Entry point of the program
  * ...
- * Description: Prints all possible combination...
- * ..of single-digit numbers
+ * Description: Prints all possible combination of
+ * Single-digit numbers
  * ...
  * Return: Always 0 (Sucess)
  */
