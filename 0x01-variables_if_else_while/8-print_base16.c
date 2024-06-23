@@ -1,30 +1,28 @@
 #include <stdio.h>
-
 /**
- * main - Entry of the program
- * ...
- * Description: Print all numbers of base 16 in lowercase
- * Starting from 0
- * Followed by a new line
- * ...
- * Note: Base 16 = 0123456789ABCDEF (where A-F = 10-15)
+ * main - Entry point of the program
+ *
+ * Description: Prints all numbers of base 16 in lowercase
+ * Starting from 0, followed by a new line
+ * Base 16 = 0123456789abcdef (where a-f = 10-15)
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int n; /* Declare variable n of type int */
-	char ch; /* Declare variable ch of typre char*/
+	char ch; /* Declare variable ch of type char */
 	
-	for (n = 0; n < 10; n++) /*Sets n to 0, increases to 9 */
+	for (n = 0; n < 10; n++) /* Loop from 0 to 9 */
 	{
-		putchar(n + '0'); /*Prints n to equate ASCII xter*/
+		putchar(n + '0'); /* Print digits 0-9 in ASCII xters */
 	}
 	
-	for (ch = 'a'; ch <= 'f'; ch++) /*Sets ch to a, increases to f*/
+	for (ch = 'a'; ch <= 'f'; ch++) /* Loop from 'a' to 'f' */
 	{
-		putchar(ch); /*Prints ch in  increment mode*/
+		putchar(ch); /* Print characters 'a' to 'f' */
 	}
 	
-	putchar('\n'); /* Print new line after loop*/
+	putchar('\n'); /* Print new line */
 	return (0);
 }
