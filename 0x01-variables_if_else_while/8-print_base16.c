@@ -12,7 +12,7 @@ int main(void)
 {
 	int n; /* Declare variable n of type int */
 	char ch; /* Declare variable ch of type char */
-	
+
 	for (n = 0; n < 10; n++) /* Loop from 0 to 9 */
 	{
 		putchar(n + '0'); /* Print digits 0-9 in ASCII xters */
