@@ -58,8 +58,26 @@ typedef struct shash_table_s {
 - Handle collisions using chaining.
 - Implement sorted hash tables with linked list sorting.
 
-## Compilation
-Compile the program using:
+## Files
+- *0-hash_table_create.c:* Function to create a hash table.
+- *1-djb2.c:* djb2 hash function.
+- *2-key_index.c:* Function to return the index of a key.
+- *3-hash_table_set.c:* Function to add an element to the hash table.
+- *4-hash_table_get.c:* Function to retrieve a value by key.
+- *5-hash_table_print.c:* Function to print the hash table.
+- *6-hash_table_delete.c:* Function to delete the hash table.
+
+## Individual Compilation
+Each program file was compiled and tested againt a test file as shown below:
+Example - Task 0:
+- Function file:- 0-hash_table_create.c
+- Test file :- 0-main.c
 ```bash
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hash_tables
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -I. test_files/0-main.c 0-hash_table_create.c -o a
+```
+
+## Individual Test Usage
+Task 0 function  program was run as follows:
+```bash
+./a
 ```
